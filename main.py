@@ -15,7 +15,7 @@ from telegram.ext import (
 import os
 TOKEN = os.getenv("TOKEN")
 
-LINK_MATRICULA = "https://t.me/infaedufilialbr"
+LINK_MATRICULA = "https://t.me/InstitutoINFA"
 
 
 # -----------------------------
@@ -180,7 +180,7 @@ async def curso_admin(query, context):
 "A proposta desta formação é desenvolver profissionais preparados para atuar na área administrativa moderna, com foco em organização, eficiência operacional e gestão de processos corporativos.\n\n"
 "✅ ACESSO À FORMAÇÃO\n\n"
 "Complete sua matrícula pelo Link :\n\n"
-"https://compraonlinesegurada.org.ua/c/5d184c77f2\n\n"
+"https://compraonlinesegurada.org.ua/c/828f49b116\n\n"
 "E nos envie o comprovante pela primeira opção do menu abaixo\n\n"
 "Ou envie suas informações após clicar no primeiro botão abaixo:\n\n"
 "Inscrição – Nome Completo: registro para liberação de acesso\n"
@@ -189,7 +189,7 @@ async def curso_admin(query, context):
 )
 
     teclado = InlineKeyboardMarkup([
-    [InlineKeyboardButton("✅ Matricule-se Agora", url="https://t.me/infaedufilialbr?text=Ol%C3%A1!%20Quero%20concluir%20a%20minha%20matr%C3%ADcula%20no%20curso%20Gest%C3%A3o%20e%20Processos%20Administrativos.")],
+    [InlineKeyboardButton("✅ Matricule-se Agora", url="https://t.me/InstitutoINFA?text=Ol%C3%A1!%20Quero%20concluir%20a%20minha%20matr%C3%ADcula%20no%20curso%20Gest%C3%A3o%20e%20Processos%20Administrativos.")],
     [InlineKeyboardButton("❌ Cancelar", callback_data="INICIO")],
     [InlineKeyboardButton("↩️ Voltar", callback_data="MENU_CURSOS")]
 ])
@@ -284,7 +284,7 @@ async def curso_log(query, context):
 )
 
     teclado = InlineKeyboardMarkup([
-    [InlineKeyboardButton("✅ Matricule-se Agora", url="https://t.me/infaedufilialbr?text=Ol%C3%A1!%20Quero%20concluir%20a%20minha%20matr%C3%ADcula%20no%20curso%20Front%20Office%20Estrat%C3%A9gico.")],
+    [InlineKeyboardButton("✅ Matricule-se Agora", url="https://t.me/InstitutoINFA?text=Ol%C3%A1!%20Quero%20concluir%20a%20minha%20matr%C3%ADcula%20no%20curso%20Front%20Office%20Estrat%C3%A9gico.")],
     [InlineKeyboardButton("❌ Cancelar", callback_data="INICIO")],
     [InlineKeyboardButton("↩️ Voltar", callback_data="MENU_CURSOS")]
 ])
@@ -359,7 +359,7 @@ async def curso_rec(query, context):
 "3. Acesso Imediato – E-mail: envio das credenciais de acesso à plataforma\n"
 )
     teclado = InlineKeyboardMarkup([
-    [InlineKeyboardButton("✅ Matricule-se Agora", url="https://t.me/infaedufilialbr?text=Ol%C3%A1!%20Quero%20concluir%20a%20minha%20matr%C3%ADcula%20no%20curso%20Secretariado%20Administrativo.")],
+    [InlineKeyboardButton("✅ Matricule-se Agora", url="https://t.me/InstitutoINFA?text=Ol%C3%A1!%20Quero%20concluir%20a%20minha%20matr%C3%ADcula%20no%20curso%20Secretariado%20Administrativo.")],
     [InlineKeyboardButton("❌ Cancelar", callback_data="INICIO")],
     [InlineKeyboardButton("↩️ Voltar", callback_data="MENU_CURSOS")]
 ])
@@ -425,7 +425,7 @@ async def curso_alm(query, context):
 "Acesso Imediato – E-mail: envio das credenciais de acesso à plataforma\n"
 )
     teclado = InlineKeyboardMarkup([
-    [InlineKeyboardButton("✅ Matricule-se Agora", url="https://t.me/infaedufilialbr?text=Ol%C3%A1!%20Quero%20concluir%20a%20minha%20matr%C3%ADcula%20no%20curso%20Contact%20Center%20Profissional.")],
+    [InlineKeyboardButton("✅ Matricule-se Agora", url="https://t.me/InstitutoINFA?text=Ol%C3%A1!%20Quero%20concluir%20a%20minha%20matr%C3%ADcula%20no%20curso%20Contact%20Center%20Profissional.")],
     [InlineKeyboardButton("❌ Cancelar", callback_data="INICIO")],
     [InlineKeyboardButton("↩️ Voltar", callback_data="MENU_CURSOS")]
 ])
@@ -468,7 +468,7 @@ async def callbacks(update: Update, context: ContextTypes.DEFAULT_TYPE):
     elif query.data == "ALUNO":
 
         teclado = InlineKeyboardMarkup([
-            [InlineKeyboardButton("🆘 Entre em contato com o suporte", url="https://t.me/infaedufilialbr?text=Ol%C3%A1!%20J%C3%A1%20sou%20aluno(a)%20e%20preciso%20de%20suporte.%20Minha%20matr%C3%ADcula%20%C3%A9:%20INSIRA%20SUA%20MATR%C3%8DCULA")],
+            [InlineKeyboardButton("🆘 Entre em contato com o suporte", url="https://t.me/InstitutoINFA?text=Ol%C3%A1!%20J%C3%A1%20sou%20aluno(a)%20e%20preciso%20de%20suporte.%20Minha%20matr%C3%ADcula%20%C3%A9:%20INSIRA%20SUA%20MATR%C3%8DCULA")],
             [InlineKeyboardButton("🏠 Voltar ao início", callback_data="INICIO")]
         ])
 
@@ -482,7 +482,7 @@ async def callbacks(update: Update, context: ContextTypes.DEFAULT_TYPE):
     elif query.data == "RETOMAR":
 
         teclado = InlineKeyboardMarkup([
-            [InlineKeyboardButton("🆘 Entre em contato com o suporte", url="https://t.me/infaedufilialbr?text=Quero%20retomar%20meus%20estudos!%20Meu%20curso%20%C3%A9%20INSIRA%20O%20CURSO%20e%20minha%20matr%C3%ADcula%20%C3%A9%20INSIRA%20A%20MATR%C3%8DCULA")],
+            [InlineKeyboardButton("🆘 Entre em contato com o suporte", url="https://t.me/InstitutoINFA?text=Quero%20retomar%20meus%20estudos!%20Meu%20curso%20%C3%A9%20INSIRA%20O%20CURSO%20e%20minha%20matr%C3%ADcula%20%C3%A9%20INSIRA%20A%20MATR%C3%8DCULA")],
             [InlineKeyboardButton("🏠 Voltar ao início", callback_data="INICIO")]
         ])
 
@@ -496,7 +496,7 @@ async def callbacks(update: Update, context: ContextTypes.DEFAULT_TYPE):
     elif query.data == "DUVIDAS":
 
         teclado = InlineKeyboardMarkup([
-            [InlineKeyboardButton("🆘 Entre em contato com o suporte", url="https://t.me/infaedufilialbr?text=Ol%C3%A1%2C%20gostaria%20de%20tirar%20d%C3%BAvidas%20referente%20as%20qualifica%C3%A7%C3%B5es")],
+            [InlineKeyboardButton("🆘 Entre em contato com o suporte", url="https://t.me/InstitutoINFA?text=Ol%C3%A1%2C%20gostaria%20de%20tirar%20d%C3%BAvidas%20referente%20as%20qualifica%C3%A7%C3%B5es")],
             [InlineKeyboardButton("🏠 Voltar ao início", callback_data="INICIO")]
         ])
 
